@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 html, body {
   margin: 0;
   padding: 0;
@@ -12,6 +11,7 @@ header {
   height: 110px;
   display: flex;
   align-items: center;
+  margin: 5px 30px;
 }
 
 header .site-logo{
@@ -25,8 +25,11 @@ header .site-logo{
 header a{
   color: black;
   text-decoration: none;
-  padding-right: 10px;
   font-size: 20px;
+}
+nav a:hover{
+  color: #FF8C38;
+  text-decoration: underline;
 }
 .home-container{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/image/image53.png") no-repeat center center;
@@ -34,9 +37,10 @@ header a{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 550px;
+  min-height: 750px;
   color: white;
-  padding: 45px 23px;
+  padding:90px 60px;
+  text-align: center;
 }
 .home-container h1 {
   font-weight: 700;
@@ -54,7 +58,7 @@ header a{
   text-decoration: none;
   background-color: #FF8C38;
   border: none;
-  width: 100%;
+  width: 50%;
   margin-top: 27px;
   padding-block: .75rem;
   color: white;
@@ -68,7 +72,11 @@ header a{
 }
 /*** ABOUT PAGE ***/
 .about-hero-image {
+  display: block;
   max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  
 }
 
 .about-page-content {

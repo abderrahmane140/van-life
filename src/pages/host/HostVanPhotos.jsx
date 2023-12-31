@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router-dom"
 export default function HostVanPhotos() {
-  const { detailCard } = useOutletContext()
+  const { currentVan } = useOutletContext()
   return (
-    <img src={detailCard.imageUrl} className="host-van-detail-image" />
+    <img src={currentVan.imageUrl} className="host-van-detail-image" />
   )
 }
